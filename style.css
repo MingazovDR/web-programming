@@ -1,3 +1,42 @@
+body {
+background: #f9e933;
+}
 header, main, footer {
 min-width: 855px;
+font-size: 21px;
+
 }
+header .container, main .container, footer .container {
+margin: auto;
+}
+header {
+background: white;
+overflow: hidden;
+}
+header h1 {
+float: left;
+width: 700px;
+}
+header nav {
+float: right;
+width: 305px;
+}
+main {
+background: white;
+overflow: auto;
+}
+main .description {
+float: left;
+}
+main .lightbukb {
+float: right;
+margin-right:50px;
+}
+footer .contact {
+float: left;
+}
+footer .sitemap {
+float: right;
+width: 320px;
+}
+
