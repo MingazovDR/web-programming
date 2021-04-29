@@ -6,7 +6,31 @@ header, main, footer {
 	font-size: 21px;
 }
 header .container, main .container, footer .container {
+	max-width: 855px;
 	margin: auto;
+}
+.container hr {
+	font-weight: bold;
+}
+.description {
+	margin: 0 0 0 3%;
+}
+.description ul {
+	margin: 0 0 0 2%;
+}
+.description h2 {
+	font-size: 40px;
+	font-weight: bold;
+}
+.description p {
+	margin: 2% 0 2% 0;
+}
+.description li {
+	line-height: 35px;
+}
+.description h3 {
+	font-size: 30px;
+	font-weight: bold;
 }
 header {
 	background: #B0C4DE;
@@ -16,82 +40,36 @@ header nav {
 	float: right;
 	margin: 30px 30px 0 0;
 }
-header a {
+header a, footer a {
 	text-decoration: none; /* Отменяем подчеркивание у ссылки */
 	color: black;
 }
-header a:visited { /* Цвет посещенных ссылок */
-	color: #000080;
-}
-header a:active { /* Цвет активных ссылок */
-	color: #000080;
-}
 header h1 {
-	float: left;
-	margin-left:25px;
-	width: 700px;
-	font-size: 50pt;
 	font-style: italic;
-	margin-bottom:5px;
+	font-size: 70px;
+	float: left;
+	width: 570px;
+	margin-left: 10px;
 }
-hr {
-    background-color: black; /* Цвет линии */
-    height: 1px; /* Толщина линии */
+.contact {
+	line-height: 35px;
 }
 main {
 	background: #B0C4DE;
 	overflow: auto;
 }
-main p{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-main h2 {
+main .content {
 	float: left;
-	font-size: 30pt;
-	font-weight: bold;	
-}
-main h3{
-    float: left;
-    font-size: 20pt;
-    font-weight: bold;
-}
-main ul {
-	margin-left: 25px;
-}
-main .description {
-	margin-left: 20px;
 }
 main .lightbukb {
-	float: right;
+	background-color: transparent;
+	margin-top: 20px;
+	float: right;  
 }
-footer {
-    color: black;
-}
-footer h5{
-    margin-left: 20px;
-    font-weight: bold;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-footer p{
-    margin-left: 20px;
-    margin-top: 5px;
-}
-footer ul {
-	margin-left:20px;
-}
-footer a {
-	text-decoration: none;
-	color: black;
-}
-footer a:visited {
-    color: #000080; /* Цвет посещенных ссылок */
+main .light {
+	margin-bottom: 85px;
 }
 
-footer a:active {
-    color: #000080; /* Цвет активных ссылок */
-}
 footer .contact {
 	float: left;
 }
@@ -99,4 +77,16 @@ footer .sitemap {
 	float: right;
 	width: 320px;
 }
+.tabs a span {
+	display: inline-block;
+	border-radius: 5px 5px 0 0;
+	width: 100px;
+	margin-right: 10px;
+	text-align: center;
+	background: #ddd;
+	padding: 5px;
+}
 
+.tabs a span.active {
+	background: #eee;
+}
