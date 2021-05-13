@@ -50,6 +50,7 @@ header h1 {
 	float: left;
 	width: 570px;
 	margin-left: 10px;
+	margin-bottom: 5px;
 }
 .contact {
 	line-height: 35px;
@@ -69,7 +70,9 @@ main .lightbukb {
 main .light {
 	margin-bottom: 85px;
 }
-
+main ul {
+	margin-left: 25px;
+}
 footer .contact {
 	float: left;
 }
@@ -90,3 +93,50 @@ footer .sitemap {
 .tabs a span.active {
 	background: #eee;
 }
+
+input {
+   border: 1px solid #cccccc;
+   border-radius: 3px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   -khtml-border-radius: 3px;
+   background: #ffffff !important;
+   outline: none;
+   height: 30px;
+   width: 300px;
+   color: black;
+   font-size: 11px;
+   font-family: Tahoma;
+   font-size: 30px;
+}
+
+button {
+  outline: none;
+  width:30px;
+  height:30px;
+  display:inline-block;
+  font-family:Arial, "Helvetica", sans-serif;
+  font-size:16px;
+  font-weight:bold;
+  color:#fff;
+  text-decoration:none;
+  text-transform:uppercase;
+  text-align:center;
+  text-shadow:1px 1px 0px #07526e;
+  padding-top:6px;
+  margin-left:auto;
+  margin-right:auto;
+  position:relative;
+  cursor:pointer;
+  border: none;
+  background: #109bce;
+  background-image: linear-gradient(bottom, rgb(14,137,182) 0%, rgb(22,179,236) 100%);
+  border-radius: 5px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #07526e;
+  bottom: 6px;
+}
+
+button:active {
+  bottom: 3px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #07526e;
+}  
