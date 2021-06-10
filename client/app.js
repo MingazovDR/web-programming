@@ -88,18 +88,18 @@ var main = function (toDoObjects) {
 				$(".input_btn").on("click", function () {
 					if ((($(".tags").val() !== "") && ($(".description").val() !== "")) && ((($(".tags").val()).trim().length > 0) && (($(".description").val()).trim().length > 0))){
 						var newDescription = $('.description').val();
-						var newToDo = $('.tags').val();
-						var tags = newToDo.split(",");
+						//var newToDo = $('.tags').val();
+						var tags = $('.tags').val().split(",");
+						var newToDo = {"description":newDescription, "tags":tags};
 
 						if (newToDo != '') {
-							toDoObjects.push({"description": newDescription, "tags": tags});
-							$.post("todos", {}, function (response) {
-								console.log("Мы отправили данные и получили ответ сервера!");
-								console.log(response);
-							});
-							toDos = toDoObjects.map(function (toDo) {
-							//toDos=fetchToDos(toDoObjects);
-								return toDo.description;
+							//toDoObjects.push({"description": newDescription, "tags": tags});
+							$.post("todos", newToDo, function (result) {
+								console.log(result);
+								toDoObjects.push(newToDo);
+								toDos = toDoObjects.map(function (toDo) {
+									return toDo.description;
+								});
 							});
 							alert('успешно добавлено!');
 							$('.tags').val("");
@@ -129,6 +129,10 @@ var main = function (toDoObjects) {
 
 $(document).ready(function() {
 	$.getJSON("todos.json", function (toDoObjects) {
-		main(toDoObjects);
+		//$.post("todos", organizeByTags(toDoObjects));
+
+		$.get("todos", null, function (result) {
+			main(result);
+		});
 	});
 });
