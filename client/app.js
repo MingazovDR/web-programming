@@ -93,7 +93,14 @@ var main = function (toDoObjects) {
 
 						if (newToDo != '') {
 							toDoObjects.push({"description": newDescription, "tags": tags});
-							toDos=fetchToDos(toDoObjects);
+							$.post("todos", {}, function (response) {
+								console.log("Мы отправили данные и получили ответ сервера!");
+								console.log(response);
+							});
+							toDos = toDoObjects.map(function (toDo) {
+							//toDos=fetchToDos(toDoObjects);
+								return toDo.description;
+							});
 							alert('успешно добавлено!');
 							$('.tags').val("");
 							$('.description').val("");
