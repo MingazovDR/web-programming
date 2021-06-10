@@ -1,0 +1,236 @@
+body {
+	background: #4682B4;
+}
+header, main, footer {
+	min-width: 855px;
+	font-size: 21px;
+}
+header .container, main .container, footer .container {
+	margin: auto;
+}
+.container hr {
+	font-weight: bold;
+}
+.description {
+	margin: 0 0 0 3%;
+}
+.description ul {
+	margin: 0 0 0 2%;
+}
+.description h2 {
+	font-size: 40px;
+	font-weight: bold;
+}
+.description p {
+	margin: 2% 0 2% 0;
+}
+.description li {
+	line-height: 35px;
+}
+.description h3 {
+	font-size: 30px;
+	font-weight: bold;
+}
+header {
+	background: #B0C4DE;
+	overflow: hidden;
+}
+header .amazeriffic {
+	font-style: Tahoma; 
+	font-size: 70px;
+	float: left;
+	width: 570px; 
+	margin-bottom: 50px;
+}
+header nav {
+	float: right;
+	position: absolute;
+	right: 100px;
+	top: 50px;
+}
+header a, footer a {
+	text-decoration: none; /* Отменяем подчеркивание у ссылки */
+	color: black;
+}
+header h1 {
+	font-style: italic;
+	font-size: 70px;
+	float: left;
+	width: 570px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+.contact {
+	line-height: 35px;
+	margin-left: 100px;
+}
+main {
+	background: #B0C4DE;
+	overflow: auto;
+}
+main .content {
+	float: left;
+}
+main .lightbukb {
+	background-color: transparent;
+	margin-top: 20px;
+	float: right;  
+}
+main .light {
+	margin-bottom: 85px;
+}
+main ul {
+	margin-left: 25px;
+}
+footer .contact {
+	float: left;
+}
+footer .sitemap {
+	float: right;
+	width: 320px;
+}
+.tabs a span {
+	display: inline-block;
+	border-radius: 10px 10px 0 0;
+	width: 150px;
+	margin-right: 10px;
+	text-align: center;
+	background: #FFE4B5;
+	padding: 5px;
+}
+
+.tabs a span.active {
+	background: #eee;
+}
+
+.index_button {
+   border: 1px solid #cccccc;
+   border-radius: 3px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   -khtml-border-radius: 3px;
+   background: #ffffff !important;
+   outline: none;
+   height: 30px;
+   width: 300px;
+   color: black;
+   font-size: 11px;
+   font-family: Tahoma;
+   font-size: 30px;
+}
+
+input {
+   border: 1px solid #cccccc;
+   border-radius: 3px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   -khtml-border-radius: 3px;
+   background: #ffffff !important;
+   outline: none;
+   height: 30px;
+   width: 300px;
+   color: black;
+   font-size: 11px;
+   font-family: Arial;
+   font-size: 20px;
+}
+
+.button {
+  outline: none;
+  width:100px;
+  height:30px;
+  display:inline-block;
+  font-family:Arial, "Helvetica", sans-serif;
+  font-size:16px;
+  font-weight:bold;
+  color:#fff;
+  text-decoration:none;
+  text-transform:uppercase;
+  text-align:center;
+  text-shadow:1px 1px 0px #07526e;
+  padding-top:6px;
+  margin-left:auto;
+  margin-right:auto;
+  position:relative;
+  cursor:pointer;
+  border: none;
+  background: #FF0000;
+  background-image: linear-gradient(bottom, rgb(14,137,182) 0%, rgb(22,179,236) 100%);
+  border-radius: 5px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #07526e;
+  bottom: 6px;
+}
+
+button:active {
+  bottom: 3px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #07526e;
+}  
+
+.content div {
+margin-left: 0;
+list-style: none;
+position: relative;
+counter-reset: li;
+}
+
+.content div ul {
+top: 0.7em;
+margin-bottom: 1.5em;
+border: 3px solid #221c66;
+padding: 0.6em;
+border-radius: 4px;
+background: #B0C4DE;
+color: #231F20;
+list-style-type: none;
+}
+
+.content div h3 {
+font-size: 30px;
+font-weight: bold;
+color: #170909;
+background: #B0C4DE;
+counter-increment: li;
+}
+
+.bullet {
+margin-left: 0;
+list-style: none;
+counter-reset: li;
+}
+.bullet li {
+position: relative;
+margin-bottom: 1.5em;
+border: 3px solid #221c66;
+padding: 0.6em;
+border-radius: 4px;
+background: #B0C4DE;
+color: #231F20;
+font-family: "Trebuchet MS", "Lucida Sans";
+}
+
+.bullet li:before {
+top: -0.7em;
+padding-left: 0.4em;
+padding-right: 0.4em;
+font-size: 20px;
+font-weight: bold;
+color: #4682B4;
+background: #B0C4DE;
+border-radius: 50%;
+counter-increment: li;
+content: counter(li);
+}
+.content .index_button {
+	padding: 0;
+	margin: 0;
+}
+.content, .tabs {
+	margin-left: 20px;
+}
+select {
+	width: 150px !important;
+}
+.testt {
+	margin-left: 200px;
+	width: 150px;
+}

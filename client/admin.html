@@ -5,8 +5,10 @@
 	<title>Amazeriffic</title>
 	<link rel="stylesheet" type="text/css" href="/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 	<script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
-	<script type="text/javascript" src="/js/app.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	<script type="text/javascript" src="/js/admin.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -15,7 +17,7 @@
 				<a class="amazeriffic" href="#">Amazeriffic!</a>
 				<nav>
 					<a href="/index.html">Выйти |</a>
-					<a href="flickr.html">Слайд-шоу Flickr |</a>
+					<a href="/flickr.html">Слайд-шоу Flickr |</a>
 					<a href="#">ВиО |</a>
 					<a href="#">Техподдержка</a>
 				</nav>
@@ -27,8 +29,9 @@
 			<div class="tabs">
 			</div>
 			<br>
+			<select class="js-select2" id="select" name="user" placeholder="Выберите пользователя">
+			</select>
 			<div class="content">
-
 			</div>
 			<div class="lightbukb">
 				<img class="light" src="/lightbukb.png" alt="Изображение лампочки" width="300px" height="auto">
